@@ -38,3 +38,10 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)\ArtifactsToBePublished'
 
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Dev(c308cf65-784f-44a0-bcba-c4f5e93f1454)'
+    appType: 'webAppLinux'
+    WebAppName: 'nextjscosmos6'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
