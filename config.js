@@ -1,8 +1,8 @@
 const config = {};
 
-config.endpoint = "https://psdevcosmos.documents.azure.com:443/";
-config.key =  "uk5tyfFCQOzCwykqgqr5kNFxwkIgzWIua65kAW1nsFJH2qt4Miva8RE6Q0cANWRSuUMeATqme6E7Q0n6vyqOCg==";
-config.database = "CosmosNextJs";
-config.container = "blogdata";
+config.endpoint = "https://testcosmosnextjs.documents.azure.com:443/";
+config.key =  "TG1rN1FDwPrbzcJKYPyR6Tfi1O2thc2F8FEjSbvNzWgAXd1yqSH6uhfKXlCMwZyyI4vYsozFy1qEwdxYZJ7lyg==";
+config.database = "ToDoList";
+config.container = "Items";
 
 module.exports = config;
