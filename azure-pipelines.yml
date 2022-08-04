@@ -34,9 +34,11 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)\ArtifactsToBePublished'
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: SampleApp'
+  displayName: 'SampleApp'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)\ArtifactsToBePublished'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: AzureRmWebAppDeployment@4
   inputs:
@@ -44,4 +46,4 @@ steps:
     azureSubscription: 'Dev(c308cf65-784f-44a0-bcba-c4f5e93f1454)'
     appType: 'webAppLinux'
     WebAppName: 'nextjscosmos6'
-    packageForLinux: '$(Build.ArtifactStagingDirectory)\ArtifactsToBePublished/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/drop'
