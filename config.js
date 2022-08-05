@@ -1,7 +1,7 @@
 const config = {};
 
 config.endpoint = "https://testcosmosnextjs.documents.azure.com:443/";
-config.key =  "TG1rN1FDwPrbzcJKYPyR6Tfi1O2thc2F8FEjSbvNzWgAXd1yqSH6uhfKXlCMwZyyI4vYsozFy1qEwdxYZJ7lyg==";
+config.key = "FR19RbzG0UyF4rfg6hxbhSIQvKhziSx7h7qAhX3IPMuRS4kBfDSxFkZAZesgElC0pR0utIZYjtAIeawrgu29AQ==";
 config.database = "ToDoList";
 config.container = "Items";
 
